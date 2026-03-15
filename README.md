@@ -99,22 +99,80 @@ http://127.0.0.1:8000/
 ---
 
 # API Documentation
+## Live API(Deployed Link)
+### Vendors
 
-Swagger UI
+- List / Create  
+  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/vendors/)
 
-```
-http://127.0.0.1:8000/swagger/
-```
+- Retrieve / Update / Partial Update / Delete  
+  GET, PUT, PATCH, DELETE → /api/vendors/{id}/
 
-ReDoc
+### Products
 
-```
-http://127.0.0.1:8000/redoc/
-```
+- List / Create  
+  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/products/)
+
+- Retrieve / Update / Partial Update / Delete  
+  GET, PUT, PATCH, DELETE → /api/products/{id}/
+
+### Courses
+
+- List / Create  
+  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/courses/)
+
+- Retrieve / Update / Partial Update / Delete  
+  GET, PUT, PATCH, DELETE → /api/courses/{id}/
+
+### Certifications
+
+- List / Create  
+  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/certifications/)
+
+- Retrieve / Update / Partial Update / Delete  
+  GET, PUT, PATCH, DELETE → /api/certifications/{id}/
+
+### Vendor Product Mapping
+
+- List / Create  
+  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/vendor-product-mappings/)
+
+- Retrieve / Update / Partial Update / Delete  
+  GET, PUT, PATCH, DELETE → /api/vendor-product-mappings/{id}/
+
+### Product Course Mapping
+
+- List / Create  
+  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/product-course-mappings/)
+
+- Retrieve / Update / Partial Update / Delete  
+  GET, PUT, PATCH, DELETE → /api/product-course-mappings/{id}/
+
+### Course Certification Mapping
+
+- List / Create  
+  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/course-certification-mappings/)
+
+- Retrieve / Update / Partial Update / Delete  
+  GET, PUT, PATCH, DELETE → /api/course-certification-mappings/{id}/
+
+
+## Swagger UI
+
+[Open Swagger UI](https://modular-entity-mapping-system.onrender.com/swagger/)
+
+## ReDoc
+
+[Open ReDoc Documentation](https://modular-entity-mapping-system.onrender.com/redoc/)
 
 Swagger provides interactive API testing while ReDoc provides clean API documentation.
 
 ---
+
+## Postman Collections
+
+[Open Postman Collection](https://www.postman.com/docking-module-physicist-25504295/workspace/public-workspace/collection/44863223-528b641e-c59e-432a-b849-e384250309b9?action=share&source=copy-link&creator=44863223)
+
 
 # API Usage Examples
 
