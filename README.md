@@ -159,13 +159,23 @@ GET, PUT, PATCH, DELETE → `/api/product-course-mappings/{id}/`
 GET, POST → `/api/course-certification-mappings/`  
 GET, PUT, PATCH, DELETE → `/api/course-certification-mappings/{id}/`
 
-**Filtering by vendor_id,product_id,course_id**
+
+### Filtering APIs
+
+**Filtering by `vendor_id`, `product_id`, `course_id`**
+
 🔗 https://modular-entity-mapping-system.onrender.com/api/vendor-product-mappings/?vendor_id={id}
+
 🔗 https://modular-entity-mapping-system.onrender.com/api/product-course-mappings/?product_id={id}
+
 🔗 https://modular-entity-mapping-system.onrender.com/api/course-certification-mappings/?course_id={id}
 
-### Admin Panel 
+---
+
+### Admin Panel
+
 🔗 https://modular-entity-mapping-system.onrender.com/admin/
+
 **Username:** admin  
 **Password:** admin123
 
