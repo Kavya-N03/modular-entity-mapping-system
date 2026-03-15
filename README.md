@@ -7,7 +7,7 @@ The system is designed with a modular structure where entities such as vendors, 
 
 ---
 
-# Tech Stack
+## Tech Stack
 
 - Python
 - Django
@@ -30,9 +30,9 @@ The system is designed with a modular structure where entities such as vendors, 
 
 ---
 
-# Setup Steps
+## Setup Steps
 
-## 1. Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Kavya-N03/modular-entity-mapping-system.git
@@ -41,7 +41,7 @@ cd modular-entity-mapping-system
 
 ---
 
-## 2. Create Virtual Environment
+### 2. Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -49,7 +49,7 @@ python -m venv venv
 
 ---
 
-## 3. Activate Virtual Environment
+### 3. Activate Virtual Environment
 
 ### Windows
 
@@ -65,7 +65,7 @@ source venv/bin/activate
 
 ---
 
-## 4. Install Dependencies
+### 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -73,7 +73,7 @@ pip install -r requirements.txt
 
 ---
 
-# Migration Steps
+## Migration Steps
 
 Run migrations to create database tables.
 
@@ -84,7 +84,7 @@ python manage.py migrate
 
 ---
 
-# Run Development Server
+## Run Development Server
 
 ```bash
 python manage.py runserver
@@ -99,71 +99,71 @@ http://127.0.0.1:8000/
 ---
 
 # API Documentation
-## Live API(Deployed Link)
-### Vendors
+## Live API Endpoints (Deployed on Render)
 
-- List / Create  
-  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/vendors/)
+### Master APIs
 
-- Retrieve / Update / Partial Update / Delete  
-  GET, PUT, PATCH, DELETE → /api/vendors/{id}/
+**Vendors API**  
+🔗 https://modular-entity-mapping-system.onrender.com/api/vendors/
 
-### Products
+GET, POST → `/api/vendors/`  
+GET, PUT, PATCH, DELETE → `/api/vendors/{id}/`
 
-- List / Create  
-  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/products/)
+---
 
-- Retrieve / Update / Partial Update / Delete  
-  GET, PUT, PATCH, DELETE → /api/products/{id}/
+**Products API**  
+🔗 https://modular-entity-mapping-system.onrender.com/api/products/
 
-### Courses
+GET, POST → `/api/products/`  
+GET, PUT, PATCH, DELETE → `/api/products/{id}/`
 
-- List / Create  
-  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/courses/)
+---
 
-- Retrieve / Update / Partial Update / Delete  
-  GET, PUT, PATCH, DELETE → /api/courses/{id}/
+**Courses API**  
+🔗 https://modular-entity-mapping-system.onrender.com/api/courses/
 
-### Certifications
+GET, POST → `/api/courses/`  
+GET, PUT, PATCH, DELETE → `/api/courses/{id}/`
 
-- List / Create  
-  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/certifications/)
+---
 
-- Retrieve / Update / Partial Update / Delete  
-  GET, PUT, PATCH, DELETE → /api/certifications/{id}/
+**Certifications API**  
+🔗 https://modular-entity-mapping-system.onrender.com/api/certifications/
 
-### Vendor Product Mapping
+GET, POST → `/api/certifications/`  
+GET, PUT, PATCH, DELETE → `/api/certifications/{id}/`
 
-- List / Create  
-  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/vendor-product-mappings/)
+---
 
-- Retrieve / Update / Partial Update / Delete  
-  GET, PUT, PATCH, DELETE → /api/vendor-product-mappings/{id}/
+### Mapping APIs
 
-### Product Course Mapping
+**Vendor Product Mapping API**  
+🔗 https://modular-entity-mapping-system.onrender.com/api/vendor-product-mappings/
 
-- List / Create  
-  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/product-course-mappings/)
+GET, POST → `/api/vendor-product-mappings/`  
+GET, PUT, PATCH, DELETE → `/api/vendor-product-mappings/{id}/`
 
-- Retrieve / Update / Partial Update / Delete  
-  GET, PUT, PATCH, DELETE → /api/product-course-mappings/{id}/
+---
 
-### Course Certification Mapping
+**Product Course Mapping API**  
+🔗 https://modular-entity-mapping-system.onrender.com/api/product-course-mappings/
 
-- List / Create  
-  [GET, POST](https://modular-entity-mapping-system.onrender.com/api/course-certification-mappings/)
+GET, POST → `/api/product-course-mappings/`  
+GET, PUT, PATCH, DELETE → `/api/product-course-mappings/{id}/`
 
-- Retrieve / Update / Partial Update / Delete  
-  GET, PUT, PATCH, DELETE → /api/course-certification-mappings/{id}/
+---
 
+**Course Certification Mapping API**  
+🔗 https://modular-entity-mapping-system.onrender.com/api/course-certification-mappings/
 
-## Swagger UI
+GET, POST → `/api/course-certification-mappings/`  
+GET, PUT, PATCH, DELETE → `/api/course-certification-mappings/{id}/`
 
-[Open Swagger UI](https://modular-entity-mapping-system.onrender.com/swagger/)
+🔗 **Swagger UI**  
+https://modular-entity-mapping-system.onrender.com/swagger/
 
-## ReDoc
-
-[Open ReDoc Documentation](https://modular-entity-mapping-system.onrender.com/redoc/)
+🔗 **ReDoc Documentation**  
+https://modular-entity-mapping-system.onrender.com/redoc/
 
 Swagger provides interactive API testing while ReDoc provides clean API documentation.
 
