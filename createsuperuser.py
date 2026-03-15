@@ -1,7 +1,7 @@
 import os
 import django
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "sales_order_inventory_api.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "modular_entity_mapping_system.settings")
 django.setup()
 
 from django.contrib.auth import get_user_model
